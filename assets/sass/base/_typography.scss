@@ -1,0 +1,112 @@
+////// cervo font
+@font-face{
+    font-family: 'Payback';
+    src:url(../fonts/payback/PaybAck.ttf);
+}
+
+
+////// cervo font
+@font-face{
+    font-family: 'CervoNeueBoldNeue';
+    src:url(../fonts/cervo-neue/CervoNeueBoldNeue.otf);
+}
+
+//// barlow font
+
+@font-face{
+    font-family: 'Barlow-Regular';
+    src:url(../fonts/Barlow/Barlow-Regular.ttf);
+}
+@font-face{
+    font-family: 'Barlow-Medium';
+    src:url(../fonts/Barlow/Barlow-Medium.ttf);
+}
+@font-face{
+    font-family: 'Barlow-Light';
+    src:url(../fonts/Barlow/Barlow-Light.ttf);
+}
+@font-face{
+    font-family: 'Barlow-Bold';
+    src:url(../fonts/Barlow/Barlow-ExtraBold.ttf);
+}
+///////// poping font
+@font-face{
+    font-family: 'poppins-Bold';
+    src:url(../fonts/poppins/poppins-Bold.otf);
+}
+@font-face{
+    font-family: 'poppins-ExtraLight';
+    src:url(../fonts/poppins/poppins-ExtraLight.otf);
+}
+@font-face{
+    font-family: 'poppins-SansSerif';
+    src:url(../fonts/poppins-1/Poppins-ExtraBold.otf);
+}
+
+
+//////////// montessrt font
+
+@font-face{
+    font-family:'Montserrat-Regular';
+    src:url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+/*=== Typography Styling ===*/
+
+* {
+	//font-family: $primary-regular, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: $size-small;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	text-transform: capitalize;
+	font-style: normal;
+    font-family: 'Barlow-Medium';
+	font-size: 15px;
+	&:hover {
+		color: #c70039;
+		text-decoration: none;
+	}
+}
+
+@include for-size(phone-only) {
+	h1{
+		font-size: $size-x-larg;
+	}
+	h2,span {
+		font-size: $size-larg;
+	}
+	h3 {
+		font-size: $size-medium;
+	}
+	h4 {
+		font-size: $size-regular;
+	}
+	h5 {
+		font-size: $size-small;
+	}
+	h6 {
+		font-size: $size-x-small;
+	}
+	p {
+		font-size: $size-small;
+
+		&.semi {
+			font-size: $size-xx-small;
+		}
+		&.reg {
+			font-size: $size-xx-small;
+		}
+		&.med {
+			font-size: $size-x-small;
+		}
+		&.large {
+			font-size: $size-regular;
+		}
+	}
+}

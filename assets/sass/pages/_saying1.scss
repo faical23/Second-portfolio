@@ -1,0 +1,41 @@
+.saying1{
+    background-image: url(../img/background-saying/saying.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+    h3,h1{
+        font-style: normal;
+    }
+    h3{
+        font-size: 28px;
+        padding-bottom: 14px;
+    }
+    h1{
+        padding-bottom: 30px;
+    }
+    .button4{
+        @extend .button;
+        background-color: var(--color1);
+        color: white;
+        box-shadow: inset 0 0 0 0 white;
+        transition: ease-out 0.5s;
+        &:hover{
+           box-shadow: inset 190px 0 0 0 white;
+            color: #232323;
+        }
+    }
+    @include for-size(phone-only ){
+        h1{
+            font-size: 27px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        .button4{
+            padding: 14px 21px;
+            font-size: 17px;
+        }
+    }
+}

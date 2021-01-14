@@ -1,0 +1,179 @@
+
+
+.card-portfilio{
+    padding-top: 100px;
+    h3{
+        font-size: 50px;
+        font-weight: 800;
+        letter-spacing: 8px;
+        line-height: .7;
+        text-align: center;
+        font-family: inherit;
+    }
+    h3:before,h3:after{
+        content: "";
+        display: block;
+        width: 120px;
+        height: 6px;
+        background-color:#232323;
+    }
+    h3:before{
+        margin-bottom: -23px;
+        margin-left: 247px;
+    }
+    h3:after{
+        margin-top: -16px;
+        margin-left: 733px;
+    }
+    .carousel {
+        padding-top: 70px;
+
+        .controls-top{
+            padding-top: 20px;
+            text-align: center;
+            i{
+                font-size: 33px;
+                padding: 9px 16px;
+                border-radius: 50%;
+                color: black;
+                background-color: white;
+                border: 1px solid black;
+                &:hover{
+                    transition: all 0.6s ease;
+                    color: white;
+                    background-color: var(--color1);
+                    border: none;
+                    border: 1px solid  var(--color1);
+                }
+            }
+            .left-slider{
+                padding-right: 15px;
+            }
+            .right-slider{
+                padding-left: 15px;
+            }
+       
+        }
+     .card{
+         text-align: center;
+        // background-color: rgb(189, 189, 189);
+         h4{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 1.9rem;
+            font-style: normal;
+            font-weight: 700;
+        }
+         p{
+            color: #6d6d6d;
+            text-transform: none;
+            font-size: 16px;
+            font-family: 'Montserrat-Regular';
+            line-height: 26px;
+    
+        }
+        a{
+            font-family: 'Montserrat-Regular';
+            line-height: 1.8em;
+            letter-spacing: 0;
+            color:   var(--color1);
+            letter-spacing: 1px;
+            font-size: 15px;
+            font-weight: bold;
+            &:hover{
+                color: black;
+                transition: all 1s ease;
+                i{
+                    padding-left: 3px;
+                    transition: all .5s ease;
+                }
+            }
+        }
+        i{
+            font-size: 14px;
+        }
+    
+          .card-img-top{
+            transition: all 1.4s ease;
+            object-fit: contain;
+              }
+          .card-img-top:hover{
+            transform: scale(1.05);
+          }
+          .card-body{
+              background-color: rgb(245, 248, 242);
+              &:hover{
+                p{
+                    color: rgb(0, 0, 0);
+                    transition: all 1s ease;
+                }
+              }
+          }
+          
+          &:hover{
+            box-shadow: 0px -2px 11px -4px #6d6d6d;
+            transition: all 0.7s ease;
+    
+          }
+    
+     }
+    }
+
+    @include for-size(desktop-down)
+    {
+        h3:before{
+            margin-left: 161px;
+        }
+        h3:after{
+            margin-left: 642px;
+        }
+    }
+    @include for-size(tablet-landscape-down )
+    {
+        padding-top: 370px;
+        h3:before{
+            margin-left: 41px;
+        }
+        h3:after{
+            margin-left: 520px;
+        }
+    }
+    @media (max-width: 768px) {
+     
+        h3:before{
+            margin-left: 41px !important;
+        }
+        h3:after{
+            margin-left: 520px !important;
+        }
+    
+    }
+    @media (max-width: 767px) {
+     
+        h3{
+            font-size: 40px;
+        }
+        h3:before,h3:after{
+            width: 70px;
+        }
+        h3:before{
+            margin-left: 30px !important;
+            margin-bottom: -18px !important;
+        }
+        h3:after{
+            margin-left: 402px !important;
+        }
+    
+    }
+    @include for-size( phone-only)
+    {
+        padding-top: 30px;
+        h3{
+            font-size: 38px !important;
+        }
+        h3:after,h3:before{
+            content: inherit !important;
+        }
+       
+    }
+}

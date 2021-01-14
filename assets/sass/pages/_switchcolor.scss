@@ -1,0 +1,82 @@
+.switch-color{
+    display: flex;
+    position: fixed;
+    top: 80%;
+    left: -180px;
+    .setting-off{
+        cursor: pointer;
+       background: rgb(126, 126, 126);
+        width: 52px;
+        height: 47px;
+        cursor: pointer;
+
+        i{
+            text-align: center;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            transition: ease-out 0.5s;
+            padding-top: 8px;
+            padding-left: 10px;
+            &:hover{
+                color:  var(--color1);
+            }
+        }
+    }
+
+
+    .part1{
+        background: #efefef;
+        width: 180px;
+        height: 100px;
+        padding-top: 15px;
+        .circle-titre{
+            color: #333;
+            font-size: 20px;
+            text-align: center;
+    
+        }
+        ul{
+            display: flex;
+             li{
+                 padding: 5px;
+                 padding-left: 8px;
+                .color1,.color2,.color3,.color4{
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    &:hover{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+                .color1{
+                    background-color: $primary-100;
+
+                }
+                .color2{
+                    background-color: $primary-200;
+                }            
+                .color3{
+                    background-color: $primary-300;
+                }   
+                .color4{
+                    background-color: $primary-400;
+                }
+             }
+        
+         }
+    }
+ 
+}
+
+
+
+#circle_on{
+    left:0px;
+}
+#circle_left{
+    left:-180px;
+}
+#color2-2{
+    border: 6px solid black;
+}

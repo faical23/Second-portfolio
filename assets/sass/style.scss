@@ -1,0 +1,27 @@
+// 1 - Utils
+@import "utils/variables";
+@import "utils/mixins";
+
+// 2 - Vendors;
+@import "vendors/bootstrap";
+
+// 3 - Base;
+@import "base/reset";
+@import "base/typography";
+
+// 4 - Layout;
+@import "layout/navbar";
+@import "layout/footer";
+
+// 5 - Components;
+@import "components/button";
+
+// 5 - Pages;
+@import "pages/hero1";
+@import "pages/about";
+@import "pages/skills";
+@import "pages/saying1";
+@import "pages/services";
+@import "pages/portfolio";
+@import "pages/contact-us";
+@import "pages/switchcolor";
