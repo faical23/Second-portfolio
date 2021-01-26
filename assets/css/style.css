@@ -8738,7 +8738,7 @@ footer .fa-arrow-up:hover {
 
 .about .img-about {
   max-width: 400px;
-  border: 10px solid  green;
+  border: 10px solid var(--color1);
   border-radius: 6px;
 }
 
