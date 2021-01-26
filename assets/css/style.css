@@ -8581,7 +8581,7 @@ footer .fa-arrow-up:hover {
 }
 
 .hero1 .part-anime {
-  display: ruby;
+  display: inline-flex;
 }
 
 .hero1 .part-anime h3, .hero1 .part-anime span {
@@ -8594,6 +8594,7 @@ footer .fa-arrow-up:hover {
 .hero1 .part-anime span {
   color: var(--color1);
   padding-left: 10px;
+  padding-top: 25px;
 }
 
 .hero1 .hero1-buttons {

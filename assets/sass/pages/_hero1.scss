@@ -38,7 +38,7 @@
 
     }
     .part-anime{
-        display: ruby;
+        display: inline-flex;
         h3,span{
             font-size: 45px;
             font-style: normal;
@@ -48,6 +48,7 @@
         span{
             color:var(--color1);
             padding-left: 10px;
+            padding-top: 25px;
         }
     }
     .hero1-buttons{
