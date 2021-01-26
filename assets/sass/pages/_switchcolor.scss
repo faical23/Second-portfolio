@@ -2,13 +2,17 @@
     display: flex;
     position: fixed;
     top: 80%;
-    left: -180px;
+    left: -185px;
+    transition: all 0.5s ease-in-out;
     .setting-off{
         cursor: pointer;
        background: rgb(126, 126, 126);
         width: 52px;
         height: 47px;
         cursor: pointer;
+        margin-top: 27px;
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px;
 
         i{
             text-align: center;
@@ -26,9 +30,10 @@
 
     .part1{
         background: #efefef;
-        width: 180px;
+        width: 185px;
         height: 100px;
         padding-top: 15px;
+        border-radius: 15px;
         .circle-titre{
             color: #333;
             font-size: 20px;
@@ -38,12 +43,13 @@
         ul{
             display: flex;
              li{
-                 padding: 5px;
-                 padding-left: 8px;
+                 padding: 6px;
+                 padding-left: 9px;
                 .color1,.color2,.color3,.color4{
                     display: block;
                     width: 30px;
                     height: 30px;
+                    border-radius: 100px;
                     &:hover{
                         width: 35px;
                         height: 35px;
@@ -75,7 +81,8 @@
     left:0px;
 }
 #circle_left{
-    left:-180px;
+    left:-185px;
+    transition: all 0.5s ease-in-out;
 }
 #color2-2{
     border: 6px solid black;
